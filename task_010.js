@@ -1,10 +1,10 @@
 function commonCharacters(inputString1, inputString2) {
-     var temp1 = "";
+    inputString1 = inputString1.toLowerCase();
+    inputString2 = inputString2.toLowerCase();
+    var temp1 = " ";
      temp1 = inputString1;
-     temp1 = temp1.toLowerCase();
-     var temp2 = "";
+     var temp2 = " ";
      temp2 = inputString2;
-     temp2= temp2.toLowerCase();
 
 
      var bagOfAlphabets = "";
@@ -13,7 +13,7 @@ function commonCharacters(inputString1, inputString2) {
         for (var j = 0; j <inputString2.length;j++){
             if(inputString1[i] == inputString2[j]){
                 //add letter to bag of alphabets
-                bagOfAlphabets = bagOfAlphabets + inputString2[j] +" ";
+                bagOfAlphabets = bagOfAlphabets + inputString2[j] +", ";
             }
             else{
                 continue;
@@ -21,10 +21,12 @@ function commonCharacters(inputString1, inputString2) {
 
         }
     }
+    pos = bagOfAlphabets.lastIndexOf(',');
+    bagOfAlphabets = bagOfAlphabets.substring(0,pos); //removes last comma
     bagOfAlphabets = bagOfAlphabets.substring()
     console.log("Common letters: " + bagOfAlphabets);
    
 
 }
 
-commonCharacters("house","computers");
+commonCharacters("housE","cOmpUters");

@@ -1,14 +1,11 @@
 function maximum() {
-  var  highest = arguments[i];
-for (var i =0; i < arguments.length; i++){
-    
-  if(arguments[i+1] > arguments[i])
+  var  highest = -Infinity;
+for (var i =0; i <= arguments.length; i++){
+ 
+  if(arguments[i] > highest)
   {
-      highest = arguments[i+1];
-  }
-  else
-  {
-      continue;
+     var highest = arguments[i];
+      
   }
 }
 
@@ -16,4 +13,4 @@ console.log(highest);
     
 }
 
-maximum(1,22,3,2);
+maximum(-34,-2);

@@ -1,13 +1,12 @@
- function evenOrOdd(number){
-   
-    if(number % 2 == 0){
-        console.log("Number is even");
-    }
-    else{
-        console.log("Number is odd");
-    }
+function evenOrOdd(number) {
+  let response = "";
+  if (number % 2 == 0) {
+    response = "Number is even";
+  } else {
+    response = "Number is odd";
+  }
 
-
+  return response;
 }
 
-evenOrOdd(4);
+console.log(evenOrOdd(3));

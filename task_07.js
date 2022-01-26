@@ -1,14 +1,16 @@
 function celsiusToFahrenheit(celsiusTemp) {
-    var fahrenheit = 0;
-    fahrenheit = (celsiusTemp * 9 / 5) + 32;
-    console.log(fahrenheit + " F");
+  let fahrenheit = 0;
+  fahrenheit = (celsiusTemp * 9) / 5 + 32;
+  fahrenheit = fahrenheit + " F";
+  return fahrenheit;
 }
 
 function fahrenheitToCelsius(fahrenheitTemp) {
-   var celsius = 0;
-   celsius = (fahrenheitTemp - 32) * 5 / 9;
-   console.log(celsius + " C"); 
+  let celsius = 0;
+  celsius = ((fahrenheitTemp - 32) * 5) / 9;
+  celsius = celsius + " C";
+  return celsius;
 }
 
-celsiusToFahrenheit(0);
-fahrenheitToCelsius(53);
+console.log(celsiusToFahrenheit(0));
+console.log(fahrenheitToCelsius(53));

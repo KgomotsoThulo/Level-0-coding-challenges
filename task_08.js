@@ -1,9 +1,10 @@
 function numberToTime(number) {
-   var hours = Math.floor(number / 60);
-   var minutes = number % 60;
-   console.log(hours + " hour(s), " + minutes + " minute(s)");
-    
+  let hours = Math.floor(number / 60);
+  let minutes = number % 60;
+  let time = "";
+  time = hours + " hours, " + minutes + " minutes.";
 
+  return time;
 }
 
-numberToTime(133);
+console.log(numberToTime(0));

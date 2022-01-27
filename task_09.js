@@ -29,7 +29,7 @@ function vowelsInString(inputString) {
   bagOfVowels = bagOfVowels.substring(0, pos); //removes last comma
   bagOfVowels = "Vowels: " + bagOfVowels;
 
-  return bagOfVowels;
+  console.log(bagOfVowels);
 }
 
 function removeDuplicate(string) {
@@ -42,4 +42,4 @@ function removeDuplicate(string) {
     .join("");
 }
 
-console.log(vowelsInString("Uumuziaaoo"));
+vowelsInString("Uumuziaaoo");

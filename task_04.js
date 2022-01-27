@@ -6,7 +6,7 @@ function evenOrOdd(number) {
     response = "Number is odd";
   }
 
-  return response;
+  console.log(response);
 }
 
-console.log(evenOrOdd(3));
+evenOrOdd(3);
